@@ -1,0 +1,90 @@
+/* Estilos para personalizar botón de formulario para personalizar a medida */
+/* :root {
+    --bs-font-sans-serif: 'Mukta', sans-serif !important;
+} */
+
+
+
+form .btn{
+    border: none;
+}
+
+form .btn:first-child:active{
+    background-color: #F06B30 ;
+}
+
+form .btn-primary{
+    background-color: #FFA101;
+    border: none;
+    padding: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+/* Estilo para estado hover,donde está el cursor encima del botón */
+form .btn-primary:hover{
+    background-color: #FF862F;
+    border: none;
+}
+
+/* Estilo para estado active,donde se está presionando el botón */
+form .btn-primary:active{
+    background-color: #F06B30;
+    border: none;
+}
+
+
+/* Estilos para campos de formulario */
+form .form-control, div .form-control {
+    border-color: #FAE6B1;
+    box-shadow: none;
+    border-radius: 2rem;
+    padding: 6px 20px;
+}
+
+/* Estado de formulario cuando el cursor está presionando el campo*/
+form .form-control:focus, div .form-control:focus {
+    border-color: #FFA101;
+    box-shadow: none;
+}
+
+/* Estado de formulario para mostrar que un texto es válido*/
+form.needs-validation .form-control:valid {
+    border-color: #B3DEE5;
+    background-image: none;
+}
+
+/* Estado de formulario para mostrar que un texto es válido en estado focus*/
+form.needs-validation .form-control:valid:focus {
+    border-color: #B3DEE5;
+    box-shadow: none;
+    background-image: none;
+}
+
+/* Indicar texto es inválido una vez validado*/
+form.was-validated .form-control:invalid {
+    border-color: #F06B30;
+    background-image: none;
+}
+
+
+
+/* Estado de formulario para mostrar que un texto es inválido en estado focus*/
+ form.needs-validation .form-control:invalid:focus {
+    border-color: #F06B30;
+    box-shadow: none;
+}
+
+/* Clase para modificar el color de la letra del feedback */
+form.needs-validation .invalid-feedback {
+    color: #F06B30;
+}
+
+#canvas {
+    background: #B3DEE5;
+    overflow: hidden;
+  }
+
+  .custom-arrow{
+    background: #293cb4 url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='white' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px !important;
+  }

@@ -1,0 +1,252 @@
+.breadcrumb li a{
+    color: #FFA101;
+    font-size: 14px;
+}
+.breadcrumb li.active{
+    color: #949494;
+    font-size: 14px;
+    font-family: 'Mukta', sans-serif;
+}
+
+button.btn-primary{
+    border: none;
+}
+
+button.btn-primary:first-child:active{
+    background-color: #F06B30 ;
+}
+
+button.btn-primary{
+    background-color: #FFA101;
+    border: none;
+    padding: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+/* Estilo para estado hover,donde está el cursor encima del botón */
+button.btn-primary:hover{
+    background-color: #FF862F;
+    border: none;
+}
+
+/* Estilo para estado active,donde se está presionando el botón */
+button.btn-primary:active{
+    background-color: #F06B30;
+    border: none;
+}
+
+/* Estilo para botón secundario SOLO BORDES */
+button.btn-outline-primary{
+    border-color: #FFA101;
+    color: #FFA101;
+}
+
+/* Estilo para estado hover,donde está el cursor encima del botón */
+button.btn-outline-primary:hover{
+    background-color: #FF862F;
+    border-color: #FF862F;
+}
+
+/* Estilo para estado active, donde se está presionando el botón */
+button.btn-outline-primary:first-child:active{
+    background-color: #F06B30;
+    border-color: #F06B30;
+}
+
+/* Estilo para botón secundario SOLO BORDES desabilitado */
+button.btn-outline-primary.disabled{
+    border-color: #949494;
+    color: #949494;
+}
+
+
+
+/* Estilo de componente Acordeon */
+div.accordion .accordion-item {
+    background-color: transparent;
+    border-color: #FFA101;
+    border-radius: 1rem;
+}
+
+div.accordion .accordion-item .accordion-button {
+    background-color: transparent;
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+
+div.accordion .accordion-item .accordion-button.collapsed {
+    border-radius: 1rem;
+}
+
+div.accordion .accordion-item .accordion-button:focus {
+    background-color: #FAE6B1;
+    box-shadow: none;
+    border-color: #F06B30;
+}
+
+div.accordion .accordion-item .accordion-body {
+    font-family: 'Mukta', sans-serif;
+    color: #472922;
+}
+
+div.accordion .accordion-item .accordion-button::after {
+    fill: #472922;
+}
+
+/* Acordeón de direcciones */
+div#accordionDireccion.accordion .accordion-item .accordion-button {
+    background-color: transparent;
+    font-family: 'Mukta', sans-serif;
+    color: #FFA101;
+    font-size: 16px;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+div#accordionDireccion.accordion .accordion-item {
+    background-color: white;
+}
+
+/* Terminma estilo de componente Acordeon */
+
+/* Esilo para línea divisoria */
+.hr-crema{
+    color: #FAE6B1;
+}
+
+.puntajeReviews {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #FFA101;
+    font-size: 36px;
+}
+
+.huellaVacia{
+    opacity: 40%;
+}
+
+/* Estilos para SLIDER */
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+img.slider{
+    width: 100%;
+    display: block;
+}
+.img-display{
+    overflow: hidden;
+}
+.img-showcase{
+    display: flex;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.img-showcase img{
+    min-width: 100%;
+}
+.img-select{
+    display: flex;
+}
+.img-item{
+    margin: 0.3rem;
+}
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3){
+    margin-right: 0;
+}
+.img-item:hover{
+    opacity: 0.8;
+}
+.product-content{
+    padding: 2rem 1rem;
+}
+
+
+@media screen and (min-width: 992px){
+
+    .card-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
+
+/* Estilos para MODAL REVIEWS */
+.modal-content .modal-header, .modal-content .modal-footer {
+    border: none;
+}
+
+.reviewIcon{
+    width: 32px;
+    display:block;
+    height:32px;
+    padding-left:10px;
+    align-items: center;
+    opacity: 40%;
+    transition: .2s;
+}
+
+.reviewIconSelected{
+    opacity: 100%;
+}
+
+.reviewActive{
+    opacity: 100%;
+    animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.reviewActive:before{
+    content: '';
+    background:url('/assets/img/iconos/icon_review32.svg');
+    background-size:cover;
+    position:absolute;
+    width: 32px;
+    height:32px;
+    margin-left: -10px;
+}
+
+.reviewIcon:before{
+    content: '';
+    background:url('/assets/img/iconos/icon_review32.svg');
+    background-size:cover;
+    position:absolute;
+    width: 32px;
+    height:32px;
+    margin-left: -10px;
+}
+
+.seccReview .review{
+    cursor: pointer;
+}
+
+.seccReview .review:hover{
+    transform: scale(1.1);
+    opacity: 100%;
+}

@@ -1,0 +1,52 @@
+/*Color de fondo del body*/
+#colorFondo{
+    background-color: #FFFDF5;
+}
+
+.titulosH2 {
+    text-align: center;
+}
+
+.sb28Y {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color:#ffffff;
+    font-size: 28px;
+}
+
+
+.img_carrusel {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.txt21 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color: #472922;
+    font-size: 21px;
+}
+
+.txt21N {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+    color:#FF862F;
+    font-size: 21px; 
+}
+
+#contactar {
+    text-align: center;
+}
+
+#img-art {
+    width: 280px;
+    height: 280px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 20%;
+}
+
+#col-art {
+    margin-top: 20px;
+}

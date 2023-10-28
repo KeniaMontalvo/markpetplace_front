@@ -1,0 +1,50 @@
+CSS
+/* Estilo de componente Acordeon */
+div.accordion .accordion-item {
+background-color: transparent;
+border-color: #FFA101;
+border-radius: 1rem;
+}
+
+div.accordion .accordion-item .accordion-button {
+background-color: transparent;
+font-family: 'Mukta', sans-serif;
+font-size: 16px;
+border-radius: 1rem 1rem 0rem 0rem;
+}
+
+
+div.accordion .accordion-item .accordion-button.collapsed {
+border-radius: 1rem;
+}
+
+div.accordion .accordion-item .accordion-button:focus {
+background-color: #FAE6B1;
+box-shadow: none;
+border-color: #F06B30;
+}
+
+div.accordion .accordion-item .accordion-body {
+font-family: 'Mukta', sans-serif;
+color: #472922;
+}
+
+div.accordion .accordion-item .accordion-button::after {
+fill: #472922;
+}
+
+/* Acordeón de direcciones */
+div#accordionDireccion.accordion .accordion-item .accordion-button {
+background-color: transparent;
+font-family: 'Mukta', sans-serif;
+color: #FFA101;
+font-size: 16px;
+border-radius: 1rem 1rem 0rem 0rem;
+}
+
+div#accordionDireccion.accordion .accordion-item {
+background-color: white;
+}
+
+/* Terminma estilo de componente Acordeon */
+

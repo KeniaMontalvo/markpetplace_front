@@ -1,0 +1,132 @@
+/* navbar */
+
+/*Fondo*/
+.navbar {
+    background-color: #FF862F;
+}
+
+/*ícono del menú de hamburguesa*/
+.navbar-toggler-icon {
+    background-image: url("/assets/img/Icono_hamburguesa.svg");
+}
+
+.navbar-nav .nav-link.active:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+    background-color: #fffdf521;
+}
+
+.navbar-toggler {
+    border-color: #FFFDF5;
+}
+
+.navbar-nav .nav-link.active {
+    color: #FFFDF5;
+    font-weight: bold;
+}
+
+/*Dropdown menu*/
+.dropdown-toggle {
+    font-weight: 600;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #FFFDF5;
+}
+
+ul .dropdown-menu{
+    background-color: #FF862F;
+}
+
+/*Botón*/
+.btn-outline {
+    color: #FFFDF5;
+    border-color: #FFFDF5;
+}
+
+.btn-outline:hover {
+    background-color: #FFFDF5;
+    color: #FF862F;
+    border-color: #FF862F;
+}
+
+.carousel-caption {
+    position: static;
+    color: #472922;
+}
+
+.navbar-nav .nav-link.active:hover{
+    text-decoration: underline;
+}
+
+.navbar-nav a:hover {
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border-color: #FFFDF5;
+}
+
+.navbar-nav .nav-link.active {
+    color: #FFFDF5;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #FFFDF5;
+}
+
+/*Dropdown menu*/
+.dropdown-toggle {
+    font-weight: 600;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #FFFDF5;
+}
+
+/*Botón*/
+.btn-outline {
+    color: #FFFDF5;
+    border-color: #FFFDF5;
+}
+
+.btn-outline:hover {
+    background-color: #FFFDF5;
+    color: #FF862F;
+    border-color: #FF862F;
+}
+
+.carousel-caption {
+    position: static;
+    color: #472922;
+}
+
+/*Contenedor enlaces*/
+
+.contendor-enlaces{
+    margin-right: 30px;
+}
+
+.contendor-enlaces li{
+    margin-right: 10px;
+}
+
+/*Menú lateral*/
+.offcanvas{
+    background-color: #fffdf5;
+}
+
+hr{
+    color: #FF862F;
+    margin: 0;
+}
+
+.hr_movil{
+    color: #fffdf5;
+    margin: 0;
+}

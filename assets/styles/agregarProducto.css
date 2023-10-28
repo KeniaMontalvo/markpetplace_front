@@ -1,0 +1,239 @@
+.cuerpo {
+    background-color: #FFFDF5;
+}
+
+.icono {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+
+.link {
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+    color: #FFA101;
+    padding: 200px 100px 200px 100px;
+}
+
+.titulosH1C {
+    text-align: center;
+}
+
+.icono_camara {
+    max-width: 60px;
+    max-height: 60px
+}
+
+.icon-cross:before {
+    content: "\ea0f";
+}
+
+.subtitulo {
+    font-family: 'Nunito', sans-serif;
+    color: #472922;
+    text-align: left;
+    font-size: 24px;
+}
+
+/* Estilos generales */
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* ->Estilos generales */
+
+/* Body */
+
+main {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: inline-block;
+    width: 90%;
+}
+
+/* ->Body */
+
+/* Imágenes */
+
+
+.images-cards figure {
+    position: relative;
+}
+
+.images-cards img {
+    height: 240px;
+}
+
+.images-cards figure figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    color: #FAE6B1;
+    font-size: 44px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}
+
+.images-cards figure figcaption:hover {
+    opacity: 1;
+}
+
+/* ->Imágenes */
+
+/* Selector de imágenes */
+
+#Images .add-new-photo {
+    display: flex;
+    border: 4px dashed #B3DEE5;
+    height: 100%;
+    min-height: 240px;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #B3DEE5;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+}
+
+#Images .add-new-photo.first:hover {
+    background: #ffffff;
+}
+
+#add-photo-container input {
+    display: none;
+}
+
+/* ->Selector de imágenes */
+
+#inputTitulo,
+#inputPrecio,
+#inputCantidad,
+#inputCiudad,
+#selectEstado,
+#selectAnimal,
+#selectCategoria,
+#txtDescripcion {
+    border-radius: 25px;
+    border: 1px solid #FFA101;
+}
+
+/*Formulario*/
+.textoSecundario {
+    color: #7b7b7b92;
+}
+
+.form-select {
+    background-color: #FAE6B1 !important;
+    color: #FFA101 !important;
+}
+
+.btn {
+    background-color: #FFA101 !important;
+    width: 100%;
+    color: white !important;
+}
+
+.formulario {
+    border: 1px solid #472922;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.btn_registrarProducto {
+    margin-left: 25%
+}
+
+@media (max-width: 600px) {
+    #container-form {
+        margin-top: 40px;
+        margin-left: 20 px;
+        margin-right: 20px;
+    }
+}
+
+label {
+    font-family: 'Mukta', sans-serif;
+    color: #472922;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modal {
+    position: fixed;
+
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    align-items: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #FFA101;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px !important;
+    cursor: pointer;
+    width: 50%;
+}
+
+li {
+    text-align: left;
+}
+
+.modal-content img {
+    max-width: 200px;
+}
+
+.valid-tooltip {
+    background-color: #B3DEE5 !important;
+    right: 0;
+}
+
+.invalid-tooltip {
+    background-color: #F05A18 !important;
+    right: 0;
+}

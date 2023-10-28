@@ -1,0 +1,41 @@
+body {
+    background-color: #FFFDF5;
+}
+
+.titulosH1,
+p {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mark {
+    width: 300px;
+}
+
+@keyframes ledBlink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+
+}
+
+.estambre {
+    width: 200px;
+    text-align: right;
+    animation: ledBlink 2s linear infinite;
+}

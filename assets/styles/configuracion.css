@@ -1,0 +1,16 @@
+#lista {
+    width: 500px;
+}
+
+/* quitar las decoraciones a la ul */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul hr {
+    /* border de 2px de grosor y color sólido */
+    border: 2px solid #472922;
+    border-color: #472922;
+}

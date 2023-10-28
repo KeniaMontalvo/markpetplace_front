@@ -1,0 +1,143 @@
+/*Color de fondo del body*/
+#colorFondo{
+    background-color: #FFFDF5;
+}
+
+/*Banner*/
+.contenedor-img-banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Container general*/
+
+.container {
+    margin-top: 30px;
+}
+
+.contenedor-img {
+    margin-bottom: 15px;
+}
+
+#colorFondo {
+    background-color: #FFFDF5;
+}
+
+.fila_informacion {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.subtitulo_parrafo{
+    margin-top: 10px;
+}
+
+/*Container de img*/
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-art {
+    width: 80%;
+}
+
+/*Icono de regresar*/
+.icono {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.icono_reverse {
+    transform: scaleX(-1);
+    max-width: 20px;
+    max-height: 20px;
+}
+
+
+/*Container 2: Descripciones*/
+#foto {
+    height: 216px;
+    width: 216px;
+    border-radius: 50%;
+}
+
+#logoLinkedIn {
+    height: 24px;
+    width: 24px;
+}
+
+.txt18 {
+    text-decoration: none;
+}
+
+
+/* navbar */
+
+/*Fondo*/
+.navbar {
+    background-color: #FF862F;
+}
+
+/*ícono del menú de hamburguesa*/
+.navbar-toggler-icon {
+    background-image: url("/assets/img/Icono_hamburguesa.svg");
+}
+
+.navbar-nav .nav-link.active {
+    color: #FFFDF5;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.active:hover {
+    text-decoration: underline;
+}
+
+.navbar-nav a {
+    color: #FFFDF5;
+}
+
+.navbar-nav a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+    background-color: #fffdf521;
+}
+
+.navbar-toggler {
+    border-color: #FFFDF5;
+}
+
+.navbar-nav .nav-link.active {
+    color: #FFFDF5;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link.show {
+    color: #FFFDF5;
+}
+
+/*Dropdown menu*/
+.dropdown-toggle {
+    font-weight: 600;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #472922;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #ff862f13;
+}
+
+/*Botón*/
+.btn-outline {
+    color: #FFFDF5;
+    border-color: #FFFDF5;
+}
+
+.btn-outline:hover {
+    background-color: #FFFDF5;
+    color: #FF862F;
+    border-color: #FF862F;
+}

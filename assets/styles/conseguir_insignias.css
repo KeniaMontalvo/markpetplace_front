@@ -1,0 +1,64 @@
+/*Banner*/
+.contenedor-img-banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Contenedor*/
+.texto-principal{
+    margin: 0px 30px;
+}
+
+/* Insignias */
+.contenedor-insignia {
+    position: relative;
+
+}
+
+#insignia1_radio {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+#insignia2_radio {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+#insignia3_radio {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+#insignia4_radio {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+
+.img-insignia {
+    width: 50%;
+    object-fit: cover;
+}
+
+/* insignia-titulo Se alinerará en el medio del contenedor */
+.insignia-titulo {
+    align-content: center;
+    vertical-align: middle;
+}
+
+.btn-primary {
+    background-color: #F06B30 !important;
+    border-color: #F06B30 !important;
+    border-radius: 12px !important;
+    width: 50% !important;
+    font-family: 'Mukta', sans-serif !important;
+}

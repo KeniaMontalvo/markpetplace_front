@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+.icono {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.patitas {
+    text-align: center; 
+}
+
+.centro {
+    display: inline-block; 
+    text-align: center; 
+    margin: 0 10px; 
+}
+
+.centro img {
+    display: block; 
+    margin: 0 auto; 
+}
+
+.sb18n {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #F06B30;
+    font-size: 18px;
+}
+
+.con {
+    text-align: center; 
+}
+
+.direccion {
+    display: flex; 
+    align-items: center; 
+}
+
+.direccion .link-derecha {
+    margin-left: auto; 
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.formulario {
+    text-align: center;
+}
+
+.datos {
+    border-radius: 25px;
+    border: 1px solid #FAE6B1;
+    padding: 5px;
+    width: 400px;
+}
+.datos1 {
+    border-radius: 25px;
+    border: 1px solid #FAE6B1;
+    padding: 5px;
+    width: 200px;
+}
+.btn-pago{
+    background-color: #FFA101;
+    border: none;
+    padding: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+form .btn-pago:hover{
+    background-color: #FF862F;
+    border: none;
+}
+
+form .btn-pago:active{
+    background-color: #F06B30;
+    border: none;
+}
+
+h1{
+    text-align: center;
+}
+
+.sb18B {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.linea-horizontal {
+    border: none;
+    border-top: 1px solid #F06B30; 
+}
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FAE6B1; 
+    padding: 10px;
+}
+
+.nombre {
+    font-weight: bold;
+}
+
+.resultado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.form-check .form-check-input:checked {
+    background-color: #FF862F;
+    border-color: #FF862F;
+}
+
+.form-check .form-check-input:focus {
+    box-shadow: none;
+}
+
+
+

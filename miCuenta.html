@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Cuenta</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Fuentes -->
+    <link href="https://api.fontshare.com/v2/css?f[]=nunito@700,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Estilos de Texto -->
+    <link rel="stylesheet" href="./assets/styles/estiloDeTexto.css">
+    <link rel="stylesheet" href="./assets/styles/miCuenta.css">
+    <link rel="stylesheet" href="./assets/styles/formstyle.css">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#f06b30">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
+
+    <!-- Regresar -->
+    <div class="container-fluid">
+        <a href="" class="link24" style="text-decoration: underline;">◄ Regresar</a>
+    </div>
+
+    <!-- Título -->
+    <div class="container text-center">
+        <h1 class="titulosH1C">Mi cuenta</h1>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Imagen contenedor de imagen e insignias -->
+        <div class="row">
+            <!-- imagen de perfil -->
+            <div class="col-sm-12 col-md-12 col-lg-3 text-center">
+                <img src="./assets/img/iconos/icon_gato_placeholder.svg" alt="Imagen de perfil" id="imagen-perfil">
+            </div>
+            <!-- Insignias -->
+            <div class="col-sm-12 col-md-12 col-lg-9">
+                <div class="row insignias-contenedor">
+                    <img src="./assets/img/insignias/insignia_1_placeholder.png" alt="insignia1" class="insignia">
+                    <img src="./assets/img/insignias/insignia_2_placeholder.png" alt="Insignia2" class="insignia">
+                    <img src="./assets/img/insignias/insignia_3_placeholder.png" alt="Insignia3" class="insignia">
+                    <img src="./assets/img/insignias/insignia_4_placeholder.png" alt="Insignia4" class="insignia">
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor links de perfil -->
+        <div class="row">
+            <!-- Lista links del perfil -->
+            <div class="col-sm-12 col-md-12 col-lg-3">
+                <!-- Lista con los links de Nombre, Mis pedidos, Mis Insignias, Ventas (menu desplegable), Direcciones, Métodos de pago, Configuración, Asistencia, Cerrar sesión -->
+                <ul>
+                    <li><a href="" class="titulosH4">Nombre</a></li>
+                    <hr>
+                    <li><a href="" class="titulosH4">Mis pedidos</a></li>
+                    <hr>
+                    <li><a href="" class="titulosH4">Mis insignias</a></li>
+                    <hr>
+                    <li><a href="" class="titulosH4">Ventas</a></li>
+                    <hr>
+                    <li><a href="" class="titulosH4">Direcciones</a></li>
+                    <hr>
+                    <li><a href="" class="titulosH4">Métodos de pago</a></li>
+                    <hr>
+                    <li><a href="" class="titulosH4">Configuración</a></li>
+                    <hr>
+                    <li><a href="" class="titulosH4">Asistencia</a></li>
+                    <hr>
+                    <li><a href="" class="titulosH4">Cerrar sesión</a></li>
+                    <hr>
+                </ul>
+            </div>
+            <!-- Seccion para formulario de nombre y otros (por definir) -->
+            <div class="col-sm-12 col-md-12 col-lg-9">
+                <div class="container " id="formulario-nombre">
+                    <form class="row g-3 needs-validation" action="https://formsubmit.co/markpetplace@gmail.com"
+                        method="POST" novalidate>
+                        <!-- Nombre -->
+                        <div class="col-12">
+                            <label for="nombre" class="form-label sb20">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Mark"
+                                required>
+                            <div class="invalid-feedback txt14">
+                                Revisa con ojos de águila el campo🦅
+                            </div>
+                        </div>
+                        <!-- Apellido(s) -->
+                        <div class="col-12">
+                            <label for="nombre" class="form-label sb20">Apellido(s)</label>
+                            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Paws"
+                                required>
+                            <div class="invalid-feedback txt14">
+                                Revisa con ojos de águila el campo🦅
+                            </div>
+                        </div>
+                        <!-- Nombre de usuario -->
+                        <div class="col-12">
+                            <label for="nombre" class="form-label sb20">Nombre de usuario</label>
+                            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="MarkCH31"
+                                required>
+                            <div class="invalid-feedback txt14">
+                                Revisa con ojos de águila el campo🦅
+                            </div>
+                        </div>
+                        <!-- Boton guardar -->
+                        <div class="d-grid gap-2 txt18_SB">
+                            <button type="submit" class="btn btn-primary rounded-pill">Guardar</button>
+                        </div>
+                        <!-- FormSubmit para desactivar captcha -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <!-- FormSubmit para mandar a una página de agradecimiento -->
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/miCuenta.html">
+                        <!-- FormSubmit para ponerle un asunto a los mensajes que llegan al correo -->
+                        <input type="hidden" name="_subject" value="¡Nuevo mensaje para MarkPetPlace!">
+
+                        <input type="hidden" name="_autoresponse" value="¡Hemos recibido tu aullido!">
+                        <!-- FormSubmit para darle formato a la información recibida por correo -->
+                        <input type="hidden" name="_template" value="table">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+
+    </div>
+
+    <!--Footer-->
+    <footer id="my-footer"></footer>
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Script local -->
+    <script src="./assets/javascript/script.js"></script>
+    <script src="./assets/javascript/formContacto.js"></script>
+</body>
+
+</html>

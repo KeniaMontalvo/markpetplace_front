@@ -1,0 +1,20 @@
+/*Banner*/
+.contenedor-img-banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/*Cards*/
+.card-img-top{
+    width: 100%;
+    height: auto;
+}
+
+.card-img-custom{
+    max-width: 100%;
+    height: auto;
+}
+
+.card img{
+    width: 100%;
+}

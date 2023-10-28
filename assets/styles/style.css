@@ -1,0 +1,201 @@
+/* Styles del index */
+
+/* El tamaño del fondo de color influye en el tamaño del ícono por su clase. Hubieron cambios en la propiedad transition, aspect ratio, width, margin y demás. */
+#iconos-mascotas {
+    border-radius: 50%;
+    background-color: #FAE6B1;
+    display: inline-flex;
+    width: 80px;
+    aspect-ratio: 1 / 1;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 10px 0px;
+    /*Se esribe así para darle un margen 10px vertical y 0 px horizontal*/
+    transition: background-color .3s ease-in-out;
+
+}
+
+/* Color de fondo del círculo al pasar el mouse encima */
+#iconos-mascotas:hover {
+    background-color: #FFA101;
+    color: #FFA101;
+}
+
+/* Color de fondo del círculo al presionar encima */
+#iconos-mascotas:active {
+    background-color: #FF862F;
+}
+
+.contenedor-productos {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div a .btn-verMas {
+    border-radius: 40px;
+    color: #FFFDF5;
+}
+
+#hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carousel-caption {
+    position: static;
+}
+
+div .row #hr {
+    height: 40px;
+}
+
+div .card {
+    border-radius: 12px !important;
+    height: 100%;
+}
+
+#btn-card {
+    background: #FFA101;
+    border-radius: 40px;
+    padding: 2px;
+}
+
+/* Color de las flechas del carrusel */
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+/* Cards */
+a {
+    text-decoration: none;
+}
+
+.product-card {
+    position: relative;
+    /* box-shadow: 0 2px 7px #dfdfdf; */
+    margin: 50px auto;
+    background: #ffffff;
+    border: 1px solid #fbb72c;
+    border-radius: 12px;
+}
+
+.badge {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    background: red;
+    color: #fff;
+    padding: 3px 10px;
+}
+
+.product-tumb {
+    display: flex;
+    /* align-items: center;
+    justify-content: center;
+    height: 300px;
+    padding: 50px; */
+    background: #f0f0f0;
+    border-radius: 12px 12px 0 0;
+}
+
+.product-tumb img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    border-radius: 12px 12px 0 0;
+}
+
+.product-details {
+    padding: 30px;
+}
+
+.product-catagory {
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+
+.product-details h4 a {
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 18px;
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+.product-details h4 a:hover {
+    color: #fbb72c;
+}
+
+.product-details p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 18px;
+    color: #999;
+}
+
+.product-bottom-details {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.product-bottom-details div {
+    float: left;
+    width: 50%;
+}
+
+.product-price {
+    font-size: 18px;
+    color: #fbb72c;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+}
+
+.product-price small {
+    font-size: 80%;
+    font-weight: 400;
+    text-decoration: line-through;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.product-links {
+    text-align: right;
+}
+
+.product-links a {
+    display: inline-block;
+    margin-left: 5px;
+    color: #fbb72c;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.product-links a:hover {
+    color: #fbb72c;
+
+}
+
+#icono-card {
+    border: 1px solid #fbb72c;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#icono-card:hover {
+    background-color: #fbb72c;
+    color: #fff;
+}

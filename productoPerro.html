@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Croquetas Sport Man's Choise | MarkPetPlace</title>
+
+    <!-- Fuentes -->
+    <link href="https://api.fontshare.com/v2/css?f[]=nunito@700,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <!-- CSS Estilos de Texto -->
+    <link rel="stylesheet" href="./assets/styles/estiloDeTexto.css">
+
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="./assets/styles/paginaProducto.css">
+    <link rel="stylesheet" href="./assets/styles/formstyle.css">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#f06b30">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body id="colorFondo">
+    <!-- barra de navegación -->
+    <div id="navbar-container"></div>
+
+
+    <!--Container 1: Breadcrumbs-->
+    <div class="container">
+        <div class="row"> <!--Row 1-->
+            <div class="col"> <!--Col 1-->
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb align-items-end">
+                        <li class="breadcrumb-item"><a href="./index.html">Inicio</a></li>
+                        <li class="breadcrumb-item disabled"><a href="./seccion_perros.html">Perro</a></li>
+                        <li class="breadcrumb-item"><a href="#">Alimentación</a></li>
+                        <li class="breadcrumb-item active " aria-current="page">Croquetas Sport Man's Choise</li>
+                    </ol>
+                </nav>
+            </div> <!--Cierre de Col 1-->
+        </div> <!--Cierre de Row 1-->
+
+        <div class="row justify-content-between"> <!--Row 2-->
+            <!--Columa izquierda con SLIDER DE IMAGENES-->
+            <div class="col-12 col-sm-12 col-md-6">
+                <!-- Empieza carousel/slider de imágenes -->
+                <div class="card-wrapper">
+                    <div class="card-slider">
+                        <div class="product-imgs">
+                            <div class="img-display">
+                                <div class="img-showcase ">
+                                    <!-- Imagenes a colocar del producto -->
+                                    <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418"
+                                        class="slider rounded-3"
+                                        alt="Castillo para gato con forma de cactus, con un gato sentado">
+                                    <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155-1m.webp"
+                                        class="slider rounded-3"
+                                        alt="Castillo para gato con forma de cactus, con un gato sentado">
+                                    <img src="https://www.mayoreototal.mx/cdn/shop/products/000058155-2m_1024x1024@2x.jpg?v=1662653434"
+                                        class="slider rounded-3"
+                                        alt="Castillo para gato con forma de cactus, con un gato sentado">
+
+                                </div>
+                            </div><!--CIERRE img-display-->
+                            <!-- Poner de nuevo las imágenes en el mismo orden. Con su ID en orden de acuerdo al número de imágenes -->
+                            <div class="img-select rounded-2">
+                                <div class="img-item">
+                                    <a href="#" data-id="1"><img
+                                            src="https://www.mayoreototal.mx/cdn/shop/products/000058155m_350x.webp?v=1662653418"
+                                            class="slider rounded-1"
+                                            alt="Castillo para gato con forma de cactus, con un gato sentado"></a>
+                                </div>
+                                <div class="img-item">
+                                    <a href="#" data-id="2"><img
+                                            src="https://www.mayoreototal.mx/cdn/shop/products/000058155-1m.webp"
+                                            class="slider rounded-1"
+                                            alt="Castillo para gato con forma de cactus, con un gato sentado"></a>
+                                </div>
+                                <div class="img-item">
+                                    <a href="#" data-id="3"><img
+                                            src="https://www.mayoreototal.mx/cdn/shop/products/000058155-2m_1024x1024@2x.jpg?v=1662653434"
+                                            class="slider rounded-1"
+                                            alt="Castillo para gato con forma de cactus, con un gato sentado"></a>
+                                </div>
+
+                            </div><!--CIERRE img-select-->
+                        </div><!--CIERRE product-imgs-->
+                    </div><!--CIERRE card-slider-->
+                </div><!--CIERRE card-wrapper-->
+            </div><!--CIERRE de SLIDER DE IMAGENES - Columna izq-->
+
+
+            <div class="col-12 col-sm-12 col-md-6">
+                <h2 class="titulosH5C mt-4 mt-md-0">Croquetas Sport Man's Choise</h2>
+                <div class="col-12 d-none">
+                    <!-- columna de resumen de Reviews -->
+                    <p class="align-items-center align-bottom txt14"> 0 / 5
+                        <img src="./assets/img/huellaReview.svg" alt="Huella para review" class="huellaVacia">
+                        <img src="./assets/img/huellaReview.svg" alt="Huella para review" class="huellaVacia">
+                        <img src="./assets/img/huellaReview.svg" alt="Huella para review" class="huellaVacia">
+                        <img src="./assets/img/huellaReview.svg" alt="Huella para review" class="huellaVacia">
+                        <img src="./assets/img/huellaReview.svg" alt="Huella para review" class="huellaVacia">
+                    </p>
+                </div>
+                <!-- Información del vendedor -->
+                <span class="txt14 opacity-75"> Vendido por</span>
+                <span class="txt14 ">Kenia</span>
+
+                <!-- Texto informativo del producto -->
+                <p class="txt16 mt-3">
+                    Alimento para Perro Sportsman's Choice Alta Proteína de 25 kg - Member's Mark ZK.
+
+                <p class="txt16 my-2">
+                    Fórmula de res con 27% de proteína.
+                </p>
+                <p class="txt16 my-2">
+                    Ayuda a reforzar el sistema inmunológico.
+                </p>
+
+                </p>
+
+
+                <!-- Row distribuido de precio y cantidad de producto -->
+                <div class="row my-2 align-items-center">
+                    <!-- Precio producto -->
+                    <div class="col-auto m-0 me-4">
+                        <span class="txtPrecio">$230.99</span>
+                    </div>
+
+                    <!-- Cantidad producto -->
+                    <div class="col-auto text-end">
+                        <span class="txt14 opacity-75 ">1 disponible</span>
+                    </div>
+                    <div class="col-3 col-xxl-2">
+                        <input class="form-control form-control-sm" type="number" name="" id="" value="1">
+                    </div>
+                </div><!-- Termina ROWprecio y cantidad de producto -->
+
+                <div class="row g-2 my-2"> <!-- Inicia row de botones -->
+                    <!-- Botón añadir a carrito -->
+                    <div class="col-6 d-grid gap-2 txt18_SB ">
+                        <button type="button" class="btn btn-outline-primary rounded-pill">Añadir a carrito</button>
+                    </div>
+                    <!-- Botón Comprar -->
+                    <div class="col-6 d-grid gap-2 txt18_SB">
+                        <button type="button" class="btn btn-primary rounded-pill">Comprar</button>
+                    </div>
+                </div><!-- Termina row de botones -->
+
+                <!-- Lugar de venta del producto -->
+                <p class="txt14 mt-3 mb-2 opacity-75">
+                    <img src="./assets/img/iconos/map.svg" alt="insignia Gatito"
+                        class="align-bottom"><!-- Icono de mapa -->
+                    Publicado en Guadalajara, Jalisco
+                </p>
+
+                <!-- Texto de obtención de insignias -->
+                <p class="txt14 opacity-75">
+                    <img src="./assets/img/insignias/insignia-cat.svg" alt="insignia Gatito"
+                        class="align-bottom"><!-- Imagen de insignia a obtener -->
+                    Obtienes 1 insignia Perrito Principiante con esta compra.🐶
+                </p>
+
+                <div class="hr-crema ">
+                    <hr class="border-1 opacity-75"><!-- Linea divisoria -->
+                </div>
+
+                <!-- Acordeón para mostrar más información -->
+                <div class="accordion mb-5" id="accordionExample">
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header ">
+                            <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Información detallada🐾
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+                                    Nada mejor que una alimentación sana para que tu mejor amigo se mantenga sano y
+                                    fuerte. La opción ideal para ello es el Alimento para Perro Sportsman's Choice Alta
+                                    Proteína.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Terminma acordeón para mostrar más información -->
+            </div>
+        </div> <!--Cierre de Row 2-->
+
+        <div class="row my-5 align-items-center justify-content-between d-none"> <!--Row 3-->
+
+            <div class="col-12"> <!-- Título de sección -->
+                <p class="sb18">Reseñas hechas por la pandilla digital 😸</p>
+            </div>
+
+            <div class="col-5"> <!-- Puntaje de reviews -->
+                <p class="txt14 m-0 text-center">Basado en 0 reseñas</p>
+                <span class="puntajeReviews" id="puntajeReviews">0 / 5</span>
+                <svg class="huellaVacia" width="32" height="32" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.9694 8.14197C6.9694 7.02197 6.061 6.11377 4.9408 6.11377C3.8206 6.11377 2.9126 7.02197 2.9126 8.14197C2.9126 9.26277 3.8204 10.1706 4.9408 10.1706C6.0612 10.1706 6.9694 9.26277 6.9694 8.14197Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M15.0585 6.50977C13.9385 6.50977 13.0303 7.41797 13.0303 8.53797C13.0303 9.65877 13.9385 10.5662 15.0585 10.5662C16.1787 10.5662 17.0869 9.65877 17.0869 8.53797C17.0869 7.41797 16.1789 6.50977 15.0585 6.50977Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M13.2164 10.7957C13.0754 10.6219 12.8758 10.4207 12.6466 10.2097C12.035 9.4171 11.0784 8.9043 10 8.9043C9.0402 8.9043 8.1774 9.3107 7.5676 9.9583C7.2212 10.2597 6.9132 10.5539 6.7172 10.7959L6.586 10.9561C5.974 11.7023 5.2122 12.6307 5.2178 14.2061C5.2232 15.6691 6.4146 16.8601 7.8734 16.8601C8.7066 16.8601 9.4702 16.4749 9.9668 15.8283C10.463 16.4749 11.2268 16.8601 12.0608 16.8601C13.519 16.8601 14.7102 15.6693 14.7158 14.2061C14.7214 12.6307 13.9594 11.7023 13.3476 10.9561L13.2164 10.7957Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M10.1403 7.61062C11.3746 7.61062 12.3753 6.60998 12.3753 5.37563C12.3753 4.14127 11.3746 3.14062 10.1403 3.14062C8.90592 3.14062 7.90527 4.14127 7.90527 5.37563C7.90527 6.60998 8.90592 7.61062 10.1403 7.61062Z"
+                        fill="#FFA101" />
+                </svg>
+                <svg class="huellaVacia" width="32" height="32" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.9694 8.14197C6.9694 7.02197 6.061 6.11377 4.9408 6.11377C3.8206 6.11377 2.9126 7.02197 2.9126 8.14197C2.9126 9.26277 3.8204 10.1706 4.9408 10.1706C6.0612 10.1706 6.9694 9.26277 6.9694 8.14197Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M15.0585 6.50977C13.9385 6.50977 13.0303 7.41797 13.0303 8.53797C13.0303 9.65877 13.9385 10.5662 15.0585 10.5662C16.1787 10.5662 17.0869 9.65877 17.0869 8.53797C17.0869 7.41797 16.1789 6.50977 15.0585 6.50977Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M13.2164 10.7957C13.0754 10.6219 12.8758 10.4207 12.6466 10.2097C12.035 9.4171 11.0784 8.9043 10 8.9043C9.0402 8.9043 8.1774 9.3107 7.5676 9.9583C7.2212 10.2597 6.9132 10.5539 6.7172 10.7959L6.586 10.9561C5.974 11.7023 5.2122 12.6307 5.2178 14.2061C5.2232 15.6691 6.4146 16.8601 7.8734 16.8601C8.7066 16.8601 9.4702 16.4749 9.9668 15.8283C10.463 16.4749 11.2268 16.8601 12.0608 16.8601C13.519 16.8601 14.7102 15.6693 14.7158 14.2061C14.7214 12.6307 13.9594 11.7023 13.3476 10.9561L13.2164 10.7957Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M10.1403 7.61062C11.3746 7.61062 12.3753 6.60998 12.3753 5.37563C12.3753 4.14127 11.3746 3.14062 10.1403 3.14062C8.90592 3.14062 7.90527 4.14127 7.90527 5.37563C7.90527 6.60998 8.90592 7.61062 10.1403 7.61062Z"
+                        fill="#FFA101" />
+                </svg>
+                <svg class="huellaVacia" width="32" height="32" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.9694 8.14197C6.9694 7.02197 6.061 6.11377 4.9408 6.11377C3.8206 6.11377 2.9126 7.02197 2.9126 8.14197C2.9126 9.26277 3.8204 10.1706 4.9408 10.1706C6.0612 10.1706 6.9694 9.26277 6.9694 8.14197Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M15.0585 6.50977C13.9385 6.50977 13.0303 7.41797 13.0303 8.53797C13.0303 9.65877 13.9385 10.5662 15.0585 10.5662C16.1787 10.5662 17.0869 9.65877 17.0869 8.53797C17.0869 7.41797 16.1789 6.50977 15.0585 6.50977Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M13.2164 10.7957C13.0754 10.6219 12.8758 10.4207 12.6466 10.2097C12.035 9.4171 11.0784 8.9043 10 8.9043C9.0402 8.9043 8.1774 9.3107 7.5676 9.9583C7.2212 10.2597 6.9132 10.5539 6.7172 10.7959L6.586 10.9561C5.974 11.7023 5.2122 12.6307 5.2178 14.2061C5.2232 15.6691 6.4146 16.8601 7.8734 16.8601C8.7066 16.8601 9.4702 16.4749 9.9668 15.8283C10.463 16.4749 11.2268 16.8601 12.0608 16.8601C13.519 16.8601 14.7102 15.6693 14.7158 14.2061C14.7214 12.6307 13.9594 11.7023 13.3476 10.9561L13.2164 10.7957Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M10.1403 7.61062C11.3746 7.61062 12.3753 6.60998 12.3753 5.37563C12.3753 4.14127 11.3746 3.14062 10.1403 3.14062C8.90592 3.14062 7.90527 4.14127 7.90527 5.37563C7.90527 6.60998 8.90592 7.61062 10.1403 7.61062Z"
+                        fill="#FFA101" />
+                </svg>
+                <svg class="huellaVacia" width="32" height="32" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.9694 8.14197C6.9694 7.02197 6.061 6.11377 4.9408 6.11377C3.8206 6.11377 2.9126 7.02197 2.9126 8.14197C2.9126 9.26277 3.8204 10.1706 4.9408 10.1706C6.0612 10.1706 6.9694 9.26277 6.9694 8.14197Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M15.0585 6.50977C13.9385 6.50977 13.0303 7.41797 13.0303 8.53797C13.0303 9.65877 13.9385 10.5662 15.0585 10.5662C16.1787 10.5662 17.0869 9.65877 17.0869 8.53797C17.0869 7.41797 16.1789 6.50977 15.0585 6.50977Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M13.2164 10.7957C13.0754 10.6219 12.8758 10.4207 12.6466 10.2097C12.035 9.4171 11.0784 8.9043 10 8.9043C9.0402 8.9043 8.1774 9.3107 7.5676 9.9583C7.2212 10.2597 6.9132 10.5539 6.7172 10.7959L6.586 10.9561C5.974 11.7023 5.2122 12.6307 5.2178 14.2061C5.2232 15.6691 6.4146 16.8601 7.8734 16.8601C8.7066 16.8601 9.4702 16.4749 9.9668 15.8283C10.463 16.4749 11.2268 16.8601 12.0608 16.8601C13.519 16.8601 14.7102 15.6693 14.7158 14.2061C14.7214 12.6307 13.9594 11.7023 13.3476 10.9561L13.2164 10.7957Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M10.1403 7.61062C11.3746 7.61062 12.3753 6.60998 12.3753 5.37563C12.3753 4.14127 11.3746 3.14062 10.1403 3.14062C8.90592 3.14062 7.90527 4.14127 7.90527 5.37563C7.90527 6.60998 8.90592 7.61062 10.1403 7.61062Z"
+                        fill="#FFA101" />
+                </svg>
+                <svg class="huellaVacia" width="32" height="32" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.9694 8.14197C6.9694 7.02197 6.061 6.11377 4.9408 6.11377C3.8206 6.11377 2.9126 7.02197 2.9126 8.14197C2.9126 9.26277 3.8204 10.1706 4.9408 10.1706C6.0612 10.1706 6.9694 9.26277 6.9694 8.14197Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M15.0585 6.50977C13.9385 6.50977 13.0303 7.41797 13.0303 8.53797C13.0303 9.65877 13.9385 10.5662 15.0585 10.5662C16.1787 10.5662 17.0869 9.65877 17.0869 8.53797C17.0869 7.41797 16.1789 6.50977 15.0585 6.50977Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M13.2164 10.7957C13.0754 10.6219 12.8758 10.4207 12.6466 10.2097C12.035 9.4171 11.0784 8.9043 10 8.9043C9.0402 8.9043 8.1774 9.3107 7.5676 9.9583C7.2212 10.2597 6.9132 10.5539 6.7172 10.7959L6.586 10.9561C5.974 11.7023 5.2122 12.6307 5.2178 14.2061C5.2232 15.6691 6.4146 16.8601 7.8734 16.8601C8.7066 16.8601 9.4702 16.4749 9.9668 15.8283C10.463 16.4749 11.2268 16.8601 12.0608 16.8601C13.519 16.8601 14.7102 15.6693 14.7158 14.2061C14.7214 12.6307 13.9594 11.7023 13.3476 10.9561L13.2164 10.7957Z"
+                        fill="#FFA101" />
+                    <path
+                        d="M10.1403 7.61062C11.3746 7.61062 12.3753 6.60998 12.3753 5.37563C12.3753 4.14127 11.3746 3.14062 10.1403 3.14062C8.90592 3.14062 7.90527 4.14127 7.90527 5.37563C7.90527 6.60998 8.90592 7.61062 10.1403 7.61062Z"
+                        fill="#FFA101" />
+                </svg>
+            </div>
+
+            <div class="col-4 gap-2 txt18_SB"><!-- Botón Reseña -->
+                <button type="button" class="btn btn-outline-primary disabled rounded-pill ">Deja huella con tu
+                    reseña🐾</button>
+            </div><!-- Termina botón Reseña -->
+
+            <div class="hr-crema ">
+                <hr class="border-1 opacity-75"><!-- Linea divisoria -->
+            </div>
+
+            <!-- ROW reseñas detalladas -->
+            <div class="row justify-content-center">
+                <!-- Sección sin reseñas -->
+                <div class="col-6 text-center my-2">
+                    <p class="txt14">Parece que todavía no hay reseñas...
+                        Deja la tuya como huella en la arena, para que otros curiosos viajeros sigan el rastro de tu
+                        experiencia.🐾
+                    </p>
+                    <p class="txt14">
+                        De paso, presume esas insignias.😼
+                    </p>
+                </div>
+            </div>
+
+        </div> <!--Cierre de Row 3-->
+
+    </div> <!--Cierre de Container 1-->
+
+
+    <!--Footer-->
+    <footer id="my-footer"></footer>
+
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Script local -->
+    <script src="./assets/javascript/script.js"></script>
+
+    <!-- Script con slider de imágenes -->
+    <script src="./assets/javascript/paginaProducto.js"></script>
+
+</body>
+
+</html>

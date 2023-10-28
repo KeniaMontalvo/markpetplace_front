@@ -1,0 +1,12 @@
+.recuadro_principal{
+    border: 1px solid #FFA101;
+    border-radius: 30px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 3px 2px 10px 3px #fff2dc;
+    margin-bottom: 30px;
+}
+
+.recuadro_principal p{
+    padding: 0px 15px;
+}
