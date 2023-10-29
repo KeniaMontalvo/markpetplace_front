@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacta al equipo | MarkPetPlace</title>
+
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+  <!-- Fuentes -->
+  <link href="https://api.fontshare.com/v2/css?f[]=nunito@700,800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- CSS Estilos de formulario -->
+  <link rel="stylesheet" href="../styles/formstyle.css">
+
+  <!-- CSS Estilos de Texto -->
+  <link rel="stylesheet" href="../styles/estiloDeTexto.css">
+
+  <link rel="stylesheet" href="../styles/loginregistro.css" />
+
+  <!-- FAVICON -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../assets/img/favicon/safari-pinned-tab.svg" color="#f06b30">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+
+
+<body>
+  <!-- barra de navegación -->
+  <div id="navbar-container"></div>
+
+  <!-- Contenedor "padre"-->
+  <div class="container text-center">
+
+    <div class="oculto registro position-absolute top-50 start-50 translate-middle">
+
+        <h2 class="titulosH2">Iniciar sesión</h2>
+        <p class="bienvenido txt18 mb-5">¡Bienvenido/a de vuelta a la manada!</p>
+
+        <form class="row oculto g-3 needs-validation " action="https://formsubmit.co/markpetplace@gmail.com" method="POST" novalidate>
+
+            <input type="checkbox" id="chk" aria-hidden="true">
+            <!-- Input de Nombre completo a 12 col -->
+            <div class="row g-0 my-2">
+                <input name="Nombre completo" id="name_registro" type="text" class="form-control loginForm" placeholder="Mark" required>
+                <div class="invalid-feedback txt14">Revisa con ojos de águila el campo🦅</div>
+            </div>
+
+            <!-- Input de Apellido a 12 col -->
+            <div class="row g-0 my-2">     
+                <input name="Nombre completo" id="lastName_registro" type="text" class="form-control loginForm" placeholder="Paws" required>
+                <div class="invalid-feedback txt14">Revisa con ojos de águila el campo🦅</div>
+            </div>
+
+            <!-- Input de CORREO ELECTRÓNICO a 6 col en ipad y desktop, 12 en móvil -->
+            <div class="row g-0 my-2">
+                <input name="Email" id="email_registro" type="email" class="form-control loginForm" placeholder="gatito@mail.com" required>
+                <div class="invalid-feedback txt14">Revisa con ojos de águila el campo🦅</div>
+            </div>
+
+            <!-- Input de CORREO ELECTRÓNICO a 6 col en ipad y desktop, 12 en móvil -->
+            <div class="row g-0 my-2">
+                <input name="Email" id="contrasenia_registro" type="password" class="form-control loginForm" placeholder="Contraseña" required>
+                <div class="invalid-feedback txt14">Revisa con ojos de águila el campo🦅</div>
+            </div>
+
+            <!-- Input de TELÉFONO a 6 col en ipad y desktop, 12 en móvil -->
+            <div class="row g-0 my-2">
+                <input name="telefono" id="telefono_registro" type="tel" minlength="10" maxlength="10" class="form-control loginForm" placeholder="0011223344" required>
+                <div class="invalid-feedback txt14">Revisa con ojos de águila el campo🦅</div>
+
+            </div>
+
+
+            <!-- Botón de ENVIAR MENSAJE -->
+            <div class="d-grid gap-2 txt18_SB">
+                <button type="submit" class="btn btn-primary rounded-pill">¡Bienvenido/a de nuevo!</button>
+            </div>
+
+            <div><a class="btn transparent" id="sign-in-btn">
+                <h3 class="link16">¿Ya tienes cuenta?</h3>
+            </a></div>
+        </form>
+    </div>
+  </div>
+
+  <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+    <!-- Script de navbar -->
+    <script src="../js/script.js"></script>
+    <!-- Script de formulario de contacto -->
+    <script src="../js/formContacto.js"></script>
+    <script src="../js/scrollanim.js"></script>
+
+</body>
+
+</html>
