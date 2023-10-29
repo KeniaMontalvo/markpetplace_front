@@ -18,17 +18,17 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <!-- Estilos locales -->
-    <link rel="stylesheet" href="./assets/styles/agregarProducto.css">
+    <link rel="stylesheet" href="../styles/agregarProducto.css">
 
     <!-- CSS Estilos de Texto -->
-    <link rel="stylesheet" href="./assets/styles/estiloDeTexto.css">
+    <link rel="stylesheet" href="../styles/estiloDeTexto.css">
 
     <!-- FAVICON -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="./assets/img/favicon/safari-pinned-tab.svg" color="#f06b30">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="../assets/img/favicon/safari-pinned-tab.svg" color="#f06b30">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
 
@@ -40,202 +40,206 @@
     <div id="navbar-container"></div>
 
     <!--Link de regresar con su icono -->
-    <a href="./index.html" class="link"> <img src="./assets/img/icono_regresar.svg" class="icono"> Regresar</a>
+        <div class="d-flex justify-content-start btn-de-regreso">
+            <a href="./blog.html" class="link18"> <img src="../assets/img/iconos/icono_regresar.svg" class="icono">Regresar</a>
+        </div>
 
     <!-- Título de página -->
     <h1 class="titulosH1C">Vender producto</h1>
+    
 
     <!-- 
     El siguiente código muestra la sección donde se van agregan las fotos, es decir, 
     muestra el rectángulo al que se le puede dar click para que abra el explorador de archivos
     -->
 
-    <main> <!-- Inicio de apartado para subir imagenes y el formulario -->
+<main> <!-- Inicio de apartado para subir imagenes y el formulario -->
         <div id="customAlert" class="modal">
             <div class="modal-content">
                 <span class="close" onclick="closeAlert()">&times;</span>
-                <img src="./assets/img/advertencia.svg" alt="">
-                <h1>Antes de vender un producto...</h1>
-                <p class="txt18">Ten en cuenta que somos una plataforma que promueve el compromiso con el medio
+                <img src="../assets/img/advertencia.svg" alt="Imagen de advertencia">
+                <h3 class="titulosH3C">Antes de vender un producto...</h3>
+                <p class="txt16">Ten en cuenta que somos una plataforma que promueve el compromiso con el medio
                     ambiente, por lo que
                     te pedimos que los productos que vayas a vender...</p>
-                <ul class="txt18">
+                <ul class="txt16">
                     <li>Tengan un envoltorio biodegradable.</li>
                     <li>Reutilices material que tengas en casa para envolverlos.</li>
                     <li>Evites el uso de material innecesario para el empaque del producto.</li>
                 </ul>
-                <p class="txt18">Tus clientes podrán calificar éste aspecto tuyo como vendedor, ¡así que tenlo en cuenta
+                <p class="txt16">Tus clientes podrán calificar éste aspecto tuyo como vendedor, ¡así que tenlo en cuenta
                     para tener una buena reputación!</p>
-                <button onclick="acceptAlert()" class="txt20B ">Aceptar</button>
+                <button onclick="acceptAlert()" class="txt20B btn_aceptarAdvertencia">Aceptar</button>
             </div>
         </div>
 
-        <div class="container"><!-- Inicio de div container imagenes -->
+        
 
-            <h4 class="sb24">Sube tus imagenes aquí</h4><!-- Subtitulo imagenes -->
 
-            <div class="row justify-content-sm-center"><!-- Inicio de div row -->
+    <div class="container">
 
-                <div class="col-lg-8 col-xl-8 col-md-6 col-sm-12 col-xs-12"> <!-- Inicia div de sección imagenes -->
-                    <section id="Images" class="images-cards"> <!-- Inicio de section images -->
-                        <form action="upload.php" method="post" enctype="multipart/form-data"> <!-- Form upload-->
-                            <div class="row">
-                                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-12" id="add-photo-container">
-                                    <div class="add-new-photo first" id="add-photo">
-                                        <span><img src="./assets/img/camara_icono.svg" class="icono_camara"></span>
-                                    </div>
-                                    <input type="file" multiple id="add-new-photo" name="images[]" accept="image/*">
+        <div class="row justify-content-sm-center">
+            <div class="col-lg-6 col-md-12 col-sm-12 columnas-producto">
+                
+                <h4 class="sb24">Sube tus imagenes aquí</h4><!-- Subtitulo imagenes -->
+                <section id="Images" class="images-cards"> <!-- Inicio de section images -->
+                    <form action="upload.php" method="post" enctype="multipart/form-data"> <!-- Form upload-->
+                        
+                            <div id="add-photo-container">
+                                <div class="add-new-photo first" id="add-photo">
+                                    <span><img src="../assets/img/camara_icono.svg" class="icono_camara" alt="Imagen de cámara"></span>
                                 </div>
+                                <input type="file" multiple id="add-new-photo" name="images[]" accept="image/*">
                             </div>
-                        </form> <!--  -->
+                        
+                    </form> <!-- termina form para subir imágenes -->
+                </section> <!-- Fin de section images -->
+            </div> <!--termina col 1-->
 
-                    </section> <!-- Fin de section images -->
-
-                </div><!-- Termina div de sección imagenes -->
-
+            <div class="col-lg-6 col-md-12 col-sm-12 columnas-producto">
                 <!-- 
-                    Código que muestra el formulario con los campos a llenar, es decir, los campos:
-                    Titulo del producto
-                    Precio del producto
-                    El tipo de animal al que pertecene el producto
-                    La categoría a la que pertenece el producto
-                    Descripción del producto
-                    Y finalmente, se agrega el botón para registrar el producto
-                 -->
-
-
+                        Código que muestra el formulario con los campos a llenar, es decir, los campos:
+                        Titulo del producto
+                        Precio del producto
+                        El tipo de animal al que pertecene el producto
+                        La categoría a la que pertenece el producto
+                        Descripción del producto
+                        Y finalmente, se agrega el botón para registrar el producto
+                    -->
                 <!--Inicio formulario-->
-                <form class="col-xl-4 col-lg-4 col-md-6 col-sm-10 col-xs-10 formulario needs-validation"
-                    id="container-form" novalidate>
-                    <div class=" mb-3 position-relative">
-                        <label for="Titulo" class="form-label">Título <span class="textoSecundario">Máximo 40
-                                caracteres</span></label>
-                        <input type="text" class="form-control" id="inputTitulo" placeholder="Titulo del producto"
-                            id="tituloProducto" required>
+                <form class="formulario needs-validation"
+                id="container-form" novalidate>
+                <div class=" mb-3 position-relative">
+                    <label for="Titulo" class="form-label">Título <span class="textoSecundario">Máximo 40
+                            caracteres</span></label>
+                    <input type="text" class="form-control" id="inputTitulo" placeholder="Titulo del producto"
+                        id="tituloProducto" required>
 
-                        <div class="invalid-tooltip">
-                            Es necesario añadir un título
-                        </div>
+                    <div class="invalid-tooltip">
+                        Es necesario añadir un título
                     </div>
-                    <div class="mb-3 position-relative">
-                        <label for="Precio" class="form-label">Precio</label>
-                        <input type="number" class="form-control" id="inputPrecio" placeholder="$" required>
+                </div>
+                <div class="mb-3 position-relative">
+                    <label for="Precio" class="form-label">Precio</label>
+                    <input type="number" class="form-control" id="inputPrecio" placeholder="$" required>
 
-                        <div class="invalid-tooltip">
-                            Es necesario añadir un precio
-                        </div>
+                    <div class="invalid-tooltip">
+                        Es necesario añadir un precio
                     </div>
+                </div>
 
-                    <div class="mb-3 position-relative">
-                        <label for="Cantidad" class="form-label">Cantidad</label>
-                        <input type="number" class="form-control" id="inputCantidad"
-                            placeholder="Cantidad de productos disponibles" required>
+                <div class="mb-3 position-relative">
+                    <label for="Cantidad" class="form-label">Cantidad</label>
+                    <input type="number" class="form-control" id="inputCantidad"
+                        placeholder="Cantidad de productos disponibles" required>
 
-                        <div class="invalid-tooltip">
-                            Es necesario añadir la cantidad de productos
-                        </div>
+                    <div class="invalid-tooltip">
+                        Es necesario añadir la cantidad de productos
                     </div>
+                </div>
 
-                    <div class="mb-3 position-relative">
-                        <label for="Ciudad" class="form-label">Ciudad</label>
-                        <input type="text" class="form-control" id="inputCiudad"
-                            placeholder="Ciudad donde te encuentras vendiendo" required>
+                <div class="mb-3 position-relative">
+                    <label for="Ciudad" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCiudad"
+                        placeholder="Ciudad donde te encuentras vendiendo" required>
 
-                        <div class="invalid-tooltip">
-                            Es necesario añadir una Ciudad
-                        </div>
+                    <div class="invalid-tooltip">
+                        Es necesario añadir una Ciudad
                     </div>
+                </div>
 
-                    <div class="mb-3 position-relative">
-                        <label for="Estado" class="form-label">Estado</label>
-                        <select class="form-select" id="selectEstado" aria-label="Default select example" required>
-                            <option disabled selected value="">Estado</option>
-                            <option value="Aguascalientes">Aguascalientes</option>
-                            <option value="Baja California">Baja California</option>
-                            <option value="Baja California Sur">Baja California Sur</option>
-                            <option value="Campeche">Campeche</option>
-                            <option value="Chiapas">Chiapas</option>
-                            <option value="Chichuahua">Chihuahua</option>
-                            <option value="Ciudad de México">Ciudad de México</option>
-                            <option value="Coahuila">Coahuila</option>
-                            <option value="Colima">Colima</option>
-                            <option value="Durango">Durango</option>
-                            <option value="Guanajuato">Guanajuato</option>
-                            <option value="Guerrero">Guerrero</option>
-                            <option value="Hidalgo">Hidalgo</option>
-                            <option value="Jalisco">Jalisco</option>
-                            <option value="México">México</option>
-                            <option value="Michoacán">Michoacán</option>
-                            <option value="Morelos">Morelos</option>
-                            <option value="Nayarit">Nayarit</option>
-                            <option value="Nuevo León">Nuevo León</option>
-                            <option value="Oaxaca">Oaxaca</option>
-                            <option value="Puebla">Puebla</option>
-                            <option value="Querétaro">Querétaro</option>
-                            <option value="Quintana Roo">Quintana Roo</option>
-                            <option value="San Luis Potosí">San Luis Potosí</option>
-                            <option value="Sinaloa">Sinaloa</option>
-                            <option value="Sonora">Sonora</option>
-                            <option value="Tabasco">Tabasco</option>
-                            <option value="Tamaulipas">Tamaulipas</option>
-                            <option value="Tlaxcala">Tlaxcala</option>
-                            <option value="Veracruz">Veracruz</option>
-                            <option value="Yucatán">Yucatán</option>
-                            <option value="Zacatecas">Zacatecas</option>
-                        </select>
+                <div class="mb-3 position-relative">
+                    <label for="Estado" class="form-label">Estado</label>
+                    <select class="form-select" id="selectEstado" aria-label="Default select example" required>
+                        <option disabled selected value="">Estado</option>
+                        <option value="Aguascalientes">Aguascalientes</option>
+                        <option value="Baja California">Baja California</option>
+                        <option value="Baja California Sur">Baja California Sur</option>
+                        <option value="Campeche">Campeche</option>
+                        <option value="Chiapas">Chiapas</option>
+                        <option value="Chichuahua">Chihuahua</option>
+                        <option value="Ciudad de México">Ciudad de México</option>
+                        <option value="Coahuila">Coahuila</option>
+                        <option value="Colima">Colima</option>
+                        <option value="Durango">Durango</option>
+                        <option value="Guanajuato">Guanajuato</option>
+                        <option value="Guerrero">Guerrero</option>
+                        <option value="Hidalgo">Hidalgo</option>
+                        <option value="Jalisco">Jalisco</option>
+                        <option value="México">México</option>
+                        <option value="Michoacán">Michoacán</option>
+                        <option value="Morelos">Morelos</option>
+                        <option value="Nayarit">Nayarit</option>
+                        <option value="Nuevo León">Nuevo León</option>
+                        <option value="Oaxaca">Oaxaca</option>
+                        <option value="Puebla">Puebla</option>
+                        <option value="Querétaro">Querétaro</option>
+                        <option value="Quintana Roo">Quintana Roo</option>
+                        <option value="San Luis Potosí">San Luis Potosí</option>
+                        <option value="Sinaloa">Sinaloa</option>
+                        <option value="Sonora">Sonora</option>
+                        <option value="Tabasco">Tabasco</option>
+                        <option value="Tamaulipas">Tamaulipas</option>
+                        <option value="Tlaxcala">Tlaxcala</option>
+                        <option value="Veracruz">Veracruz</option>
+                        <option value="Yucatán">Yucatán</option>
+                        <option value="Zacatecas">Zacatecas</option>
+                    </select>
 
-                        <div class="invalid-tooltip">
-                            Es necesario añadir un Estado
-                        </div>
+                    <div class="invalid-tooltip">
+                        Es necesario añadir un Estado
                     </div>
+                </div>
 
-                    <div class="mb-3 position-relative">
+                <div class="mb-3 position-relative">
 
-                        <label for="Animal" class="form-label">¿A qué animal pertenece el producto?</label>
-                        <select class="form-select" id="selectAnimal" required>
-                            <option disabled selected value="">Animal</option>
-                            <option value="Perro">Perro</option>
-                            <option value="Gato">Gato</option>
-                            <option value="Conejo">Conejo</option>
-                            <option value="Peces">Peces</option>
-                        </select>
+                    <label for="Animal" class="form-label">¿A qué animal pertenece el producto?</label>
+                    <select class="form-select" id="selectAnimal" required>
+                        <option disabled selected value="">Animal</option>
+                        <option value="Perro">Perro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Conejo">Conejo</option>
+                        <option value="Peces">Peces</option>
+                    </select>
 
-                        <div class="invalid-tooltip">
-                            Es necesario añadir un Estado
-                        </div>
+                    <div class="invalid-tooltip">
+                        Es necesario añadir un Estado
                     </div>
+                </div>
 
-                    <div class="mb-3 position-relative">
-                        <label for="Categoria" class="form-label">Selecciona una categoria</label>
-                        <select class="form-select" id="selectCategoria" aria-label="Default select example" required>
-                            <option selected disabled value="">Categoria</option>
-                            <option value="Alimentacion">Alimentación</option>
-                            <option value="Accesorios">Accesorios</option>
-                            <option value="Cuidado">Cuidado e higiene</option>
-                            <option value="Salud">Salud</option>
-                            <option value="Ropa">Ropa y moda</option>
-                            <option value="Entrenamiento">Productos para entrenamiento</option>
-                        </select>
+                <div class="mb-3 position-relative">
+                    <label for="Categoria" class="form-label">Selecciona una categoría</label>
+                    <select class="form-select" id="selectCategoria" aria-label="Default select example" required>
+                        <option selected disabled value="">Categoría</option>
+                        <option value="Alimentacion">Alimentación</option>
+                        <option value="Accesorios">Accesorios</option>
+                        <option value="Cuidado">Cuidado e higiene</option>
+                        <option value="Salud">Salud</option>
+                        <option value="Ropa">Ropa y moda</option>
+                        <option value="Entrenamiento">Productos para entrenamiento</option>
+                    </select>
 
-                        <div class="invalid-tooltip">
-                            Es necesario añadir un Estado
-                        </div>
+                    <div class="invalid-tooltip">
+                        Es necesario añadir un Estado
                     </div>
+                </div>
 
-                    <div class="mb-3 position-relative">
-                        <label for="Descripcion" class="form-label">Descripción del producto</label>
-                        <textarea class="form-control" id="txtDescripcion" rows="3"
-                            placeholder="Añada una descripcion del producto" required></textarea>
-                    </div>
-                    <button class="btn_registrarProducto mb-2" type="submit" id="btn-form">Añadir
-                        producto</button>
-                </form>
-            </div> <!-- Fin de div row -->
+                <div class="mb-3 position-relative">
+                    <label for="Descripcion" class="form-label">Descripción del producto</label>
+                    <textarea class="form-control" id="txtDescripcion" rows="3"
+                        placeholder="Añada una descripción del producto" required></textarea>
+                </div>
+                <button class="btn_registrarProducto mb-2" type="submit" id="btn-form">Añadir
+                    producto</button>
+            </form>
+            </div> <!--termina col 2-->
 
-        </div><!-- Fin de div container imagenes -->
+        </div>
 
-    </main>
-    <!-- Fin de la sección para subir imagenes y el formulario (main) -->
+    </div> <!--termina cointainer-->
+                
+</main>
+<!-- Fin de la sección para subir imagenes y el formulario (main) -->
 
     <!--Footer-->
     <footer id="my-footer"></footer>
@@ -257,8 +261,8 @@
 
 
 
-    <script src="./assets/javascript/agregarProducto.js"></script>
-    <script src="./assets/javascript/script.js"></script> <!-- Script local de navbar -->
+    <script src="../js/agregarProducto.js"></script>
+    <script src="../js/script.js"></script> <!-- Script local de navbar -->
 
 </body>
 

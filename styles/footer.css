@@ -22,6 +22,7 @@ body {
     text-align: center;
     width: 298.64px;
     height: 34.89px;
+    margin-bottom: 30px;
 }
 
 .arc {
@@ -31,13 +32,6 @@ body {
     border-radius: 50% / 30px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
-}
-
-
-#logo {
-    height: 34.89px;
-    width: 298.64;
-    margin-bottom: 30px;
 }
 
 .col {

@@ -2,17 +2,16 @@
     background-color: #FFFDF5;
 }
 
-.icono {
+.icono-de-regreso {
     max-width: 20px;
     max-height: 20px;
 }
 
 
-.link {
+.link-de-regreso {
     font-family: 'Mukta', sans-serif;
     font-size: 18px;
     color: #FFA101;
-    padding: 200px 100px 200px 100px;
 }
 
 .titulosH1C {
@@ -28,11 +27,14 @@
     content: "\ea0f";
 }
 
-.subtitulo {
-    font-family: 'Nunito', sans-serif;
-    color: #472922;
-    text-align: left;
-    font-size: 24px;
+.icono {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.btn-de-regreso{
+    padding-top: 30px;
+    padding-left: 30px;
 }
 
 /* Estilos generales */
@@ -59,6 +61,10 @@ main {
 .container {
     display: inline-block;
     width: 90%;
+}
+
+.columnas-producto{
+    margin-bottom: 40px;
 }
 
 /* ->Body */
@@ -166,15 +172,24 @@ main {
 }
 
 .btn_registrarProducto {
-    margin-left: 25%
+    margin-left: 25%;
+    background-color: #FFA101;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px !important;
+    cursor: pointer;
+    width: 50%;
 }
 
-@media (max-width: 600px) {
-    #container-form {
-        margin-top: 40px;
-        margin-left: 20 px;
-        margin-right: 20px;
-    }
+.btn_aceptarAdvertencia{
+    background-color: #FFA101;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 50%;
 }
 
 label {
@@ -186,7 +201,6 @@ label {
 
 .modal {
     position: fixed;
-
     width: 50%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
@@ -203,29 +217,24 @@ label {
     align-items: center;
 }
 
+.modal-content li{
+    text-align: left;
+}
+
 .close {
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
-}
-
-button {
-    background-color: #FFA101;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px !important;
-    cursor: pointer;
-    width: 50%;
-}
-
-li {
-    text-align: left;
+    width: 5%;
 }
 
 .modal-content img {
     max-width: 200px;
+}
+
+.modal-content p, ul {
+    padding: 0 40px;
 }
 
 .valid-tooltip {

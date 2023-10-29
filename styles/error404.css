@@ -18,6 +18,10 @@ p {
     width: 300px;
 }
 
+.texto-central{
+    padding: 0 50px;
+}
+
 @keyframes ledBlink {
     0% {
         opacity: 0;
