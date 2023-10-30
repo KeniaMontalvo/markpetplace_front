@@ -41,7 +41,7 @@ function crearPrimerTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, pre
           <div class="product-bottom-details">
             <div class="product-price"><small></small>${precio}</div>
             <div class="product-links">
-              <a href="../../producto.html"><i class="fa fa-shopping-bag" id="icono-card"> </i></a>
+              <a href="../../html/producto.html"><i class="fa fa-shopping-bag" id="icono-card"> </i></a>
             </div>
           </div>
         </div>
