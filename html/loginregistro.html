@@ -47,38 +47,38 @@
     <input type="checkbox" id="chk" aria-hidden="true">
 
     <div class="oculto registro">
-        <form class=" oculto needs-validation my-4" method="POST" novalidate>
+        <form class=" oculto needs-validation my-4" novalidate>
           <label for="chk" aria-hidden="true" class="link16">¿No tienes cuenta?</label>
           <h2 class="titulosH3 p-0 mb-3">¡Regístrate!</h2>
           
             <!-- Input de Nombre completo a 12 col -->
             <div class="mb-3">
-                <input name="name" id="name_registro" type="text" class="form-control loginForm" placeholder="Mark" required>
+                <input name="name" id="nameRegistro" type="text" class="form-control loginForm" placeholder="Mark" required>
                 <div class="invalid-feedback txt14">Revisa con ojos de águila el campo🦅</div>
             </div>
             <!-- Input de Apellido a 12 col -->
             <div class="mb-3">     
-                <input name="lastname" id="lastName_registro" type="text" class="form-control loginForm" placeholder="Paws" required>
+                <input name="lastname" id="lastNameRegistro" type="text" class="form-control loginForm" placeholder="Paws" required>
                 <div class="invalid-feedback txt14">Revisa con ojos de águila el campo🦅</div>
             </div>
             <!-- Input de CORREO ELECTRÓNICO a 6 col en ipad y desktop, 12 en móvil -->
             <div class="mb-3">
-                <input name="Email" id="email_registro" type="email" class="form-control loginForm" placeholder="gatito@mail.com" required>
+                <input name="Email" id="emailRegistro" type="email" class="form-control loginForm" placeholder="gatito@mail.com" required>
                 <div class="invalid-feedback txt14">Revisa con ojos de águila el campo🦅</div>
             </div>
             <!-- Input de CORREO ELECTRÓNICO a 6 col en ipad y desktop, 12 en móvil -->
             <div class="mb-3">
-                <input name="password" id="contrasenia_registro" type="password" class="form-control loginForm" placeholder="Contraseña" required>
+                <input name="password" id="passwordRegistro" type="password" class="form-control loginForm" placeholder="Contraseña" required>
                 <div class="invalid-feedback txt14">Revisa con ojos de águila el campo🦅</div>
             </div>
             <!-- Input de TELÉFONO a 6 col en ipad y desktop, 12 en móvil -->
             <div class="mb-3">
-                <input name="telefono" id="telefono_registro" type="tel" minlength="10" maxlength="10" class="form-control loginForm" placeholder="0011223344" required>
+                <input name="telefono" id="telefonoRegistro" type="tel" minlength="10" maxlength="10" class="form-control loginForm" placeholder="Telf. 0011223344"  required>
                 <div class="invalid-feedback txt14">Revisa con ojos de águila el campo🦅</div>
             </div>
             <!-- Botón de ENVIAR MENSAJE -->
             <div class=" txt18_SB">
-                <button type="submit" class="btn btn-primary rounded-pill px-4">¡Bienvenido/a a la manada</button>
+                <button type="submit" class="btn btn-primary rounded-pill px-4" id="submitRegistro">¡Bienvenido/a a la manada</button>
             </div>
 
             <label for="chk" aria-hidden="true" class="link16">¿Ya tienes cuenta?</label>
@@ -88,17 +88,17 @@
     </div>
 
     <div class="login">
-      <form class=" oculto needs-validation " method="POST" novalidate>
+      <form class=" oculto needs-validation " id="userForm"" novalidate>
         <label for="chk" aria-hidden="true" class="titulosH3 mt-4 mb-4">Iniciar sesión</label>
         <p class="bienvenido txt16 mb-3">¡Bienvenido/a de vuelta a la manada!</p>
         <!-- Input de CORREO ELECTRÓNICO a 6 col en ipad y desktop, 12 en móvil -->
         <div class="mb-3">
-            <input name="Email" id="email_registro" type="email" class="form-control loginForm" placeholder="gatito@mail.com" required>
+            <input name="Email" id="emaillogin" type="email" class="form-control loginForm" placeholder="gatito@mail.com" required>
             <div class="invalid-feedback txt14">Revisa con ojos de águila el campo🦅</div>
         </div>
         <!-- Input de CORREO ELECTRÓNICO a 6 col en ipad y desktop, 12 en móvil -->
         <div class="mb-3">
-            <input name="password" id="contrasenia_registro" type="password" class="form-control loginForm" placeholder="Contraseña" required>
+            <input name="password" id="passwordLogin" type="password" class="form-control loginForm" placeholder="Contraseña" required>
             <div class="invalid-feedback txt14">Revisa con ojos de águila el campo🦅</div>
         </div>
         <!-- Botón de ENVIAR MENSAJE -->
@@ -106,6 +106,10 @@
             <button type="submit" class="btn btn-primary rounded-pill px-4">¡Bienvenido/a de nuevo!</button>
         </div>
       </form>
+
+      <div id="userInfo" class="my-4">
+
+      </div>
 
       <img src="../assets/img/footer/Mark.svg" class="mark">
     </div>
@@ -118,8 +122,8 @@
       crossorigin="anonymous"></script>
     <!-- Script de navbar -->
     <script src="../js/script.js"></script>
+    <script src="../js/login&registro.js"></script>
     <!-- Script de formulario de contacto -->
-    <script src="../js/formContacto.js"></script>
     <script src="../js/scrollanim.js"></script>
 
 </body>
