@@ -1,6 +1,6 @@
 function crearTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, precio) {//recibe el contenedor y los datos de la tarjeta
     const tarjeta = document.createElement("div"); //crea un elemento div
-    tarjeta.className = "col-9 col-sm-6 col-md-6 col-lg-3"; //le asigna una clase al elemento div
+    tarjeta.className = "col-8 col-sm-6 col-md-6 col-lg-3"; //le asigna una clase al elemento div
     //innerHTML es una propiedad que define o devuelve el contenido HTML de un elemento
     tarjeta.innerHTML = `
       <div class="product-card">
@@ -27,7 +27,7 @@ function crearTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, precio) {
 function pintarFila(contenedorId, datosArray) { //recibe el id del contenedor y los datos de la tarjeta
     const contenedor = document.getElementById(contenedorId); //obtiene el elemento por su id
     const fila = document.createElement("div"); //crea un elemento div
-    fila.className = "row"; //le asigna una clase al elemento div
+    fila.className = "row justify-content-center"; //le asigna una clase al elemento div
 
     for (let i = 0; i < datosArray.length; i++) {
         const datos = datosArray[i];

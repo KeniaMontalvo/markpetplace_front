@@ -115,14 +115,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (data) {
                     // Mostrar la información del usuario en el elemento "userInfo"
                     userInfo.innerHTML = `
-                        <h3>Información del Usuario:</h3>
-                        <p>Nombre: ${data.nombreUsuario} ${data.apellido}</p>
-                        <p>Teléfono: ${data.telefono}</p>
-                        <p>Correo Electrónico: ${data.correo}</p>
+                        <h3 class="exSb18">¡Qué bueno verte, ${data.nombreUsuario}!</h3>
+                        <h3 class="sb16 mb-3">Información de cuenta</h3>
+                        <p class="txt16 mb-1"><b>Nombre:</b> ${data.nombreUsuario} ${data.apellido}</p>
+                        <p class="txt16 mb-1"><b>Teléfono:</b> ${data.telefono}</p>
+                        <p class="txt16 mb-1"><b>Correo electrónico:</b> ${data.correo}</p>
                     `;
                 } else {
                     // Mostrar un mensaje de usuario no encontrado si no se encontró el usuario
-                    userInfo.innerHTML = "Usuario no encontrado";
+                    userInfo.innerHTML = `
+                    <p class="txt21N">Usuario no encontrado.</p>
+                `;
                 }
 
                 
