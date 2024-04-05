@@ -1,4 +1,5 @@
 // Funcion para crear las tarjetas de la 2 en adelante
+// Funcion para crear las tarjetas de la 2 en adelante
 function crearTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, precio) {//recibe el contenedor y los datos de la tarjeta
   const tarjeta = document.createElement("div");//crea un elemento div
   tarjeta.className = "d-none d-sm-none d-md-none d-lg-block col-sm-12 col-md-3 col-lg-3";//le asigna una clase al elemento div
@@ -41,7 +42,7 @@ function crearPrimerTarjeta(contenedor, imgSrc, nombre, categoria, vendedor, pre
           <div class="product-bottom-details">
             <div class="product-price"><small></small>${precio}</div>
             <div class="product-links">
-              <a href="../../html/producto.html"><i class="fa fa-shopping-bag" id="icono-card"> </i></a>
+              <a href="../../producto.html"><i class="fa fa-shopping-bag" id="icono-card"> </i></a>
             </div>
           </div>
         </div>
@@ -162,7 +163,7 @@ const datosPerro8 = {//objeto con los datos de la tarjeta de perro
 
 const datosGato1 = {//objeto con los datos de la tarjeta de gato
   imgSrc: "./assets/img/productoArbolGato/producto-1.jpg",
-  nombre: "Árbol para gato con forma de cactus",
+  nombre: "Árbol forma de cactus",
   categoria: "Accesorios",
   vendedor: "Kenia",
   precio: "$370.00",
@@ -170,15 +171,15 @@ const datosGato1 = {//objeto con los datos de la tarjeta de gato
 
 const datosGato2 = {//objeto con los datos de la tarjeta de gato
   imgSrc: "./assets/img/seccion_gatos/accesoriogato1.jpg",
-  nombre: "Castillo para gato",
+  nombre: "Castillo café para gato",
   categoria: "Accesorios",
   vendedor: "Antonio",
-  precio: "$1,499.00",
+  precio: "$1499.00",
 };
 
 const datosGato3 = {//objeto con los datos de la tarjeta de gato
   imgSrc: "./assets/img/seccion_gatos/alimentogato1.jpg",
-  nombre: "Purina Gati",
+  nombre: "Marca Purina Gati adulto",
   categoria: "Alimentación",
   vendedor: "Alejandra",
   precio: "$255.00",
@@ -186,7 +187,7 @@ const datosGato3 = {//objeto con los datos de la tarjeta de gato
 
 const datosGato4 = {//objeto con los datos de la tarjeta de gato
   imgSrc: "./assets/img/seccion_gatos/ropagato1.jpg",
-  nombre: "Árbol para gato con forma de cactus",
+  nombre: "Traje de Dinosaurio",
   categoria: "Ropa y Moda",
   vendedor: "Uriel",
   precio: "$199.99",
@@ -227,7 +228,7 @@ const datosGato8 = {//objeto con los datos de la tarjeta de gato
 const datosPez1 = {//objeto con los datos de la tarjeta de pez
   imgSrc:
     "./assets/img/seccion_peces/alimentopez1.png",
-  nombre: "Wardley Algas",
+  nombre: "Wardley DISCO Algas",
   categoria: "Alimentación",
   vendedor: "Edna",
   precio: "$45.00",
@@ -236,16 +237,16 @@ const datosPez1 = {//objeto con los datos de la tarjeta de pez
 const datosPez2 = {//objeto con los datos de la tarjeta de pez
   imgSrc:
     "./assets/img/seccion_peces/accesoriopez1.jpg",
-  nombre: "Acuario con ilumincación led",
+  nombre: "Acuario con luz led",
   categoria: "Accesorios",
   vendedor: "Berenice",
-  precio: "$3,192.00",
+  precio: "$3192.00",
 };
 
 const datosPez3 = {//objeto con los datos de la tarjeta de pez
   imgSrc:
     "./assets/img/seccion_peces/cuidadopez1.jpg",
-  nombre: "Aquasafe plus",
+  nombre: "Tetra Aquasafe plus",
   categoria: "Cuidado e Higiene",
   vendedor: "Kenia",
   precio: "$299.00",
@@ -254,7 +255,7 @@ const datosPez3 = {//objeto con los datos de la tarjeta de pez
 const datosPez4 = {//objeto con los datos de la tarjeta de pez
   imgSrc:
     "./assets/img/seccion_peces/saludpez1.jpg",
-  nombre: "Flourish 100ml",
+  nombre: "Embotellado Flourish",
   categoria: "Salud",
   vendedor: "Antonio",
   precio: "$173.00",
@@ -298,7 +299,7 @@ const datosPez8 = {//objeto con los datos de la tarjeta de pez
 
 const datosConejo1 = {//objeto con los datos de la tarjeta de conejo
   imgSrc: "./assets/img/seccion_conejos/ProductoAccesorio.jpg",
-  nombre: "Arnés para conejo",
+  nombre: "Arnés rosa para conejo",
   categoria: "Accesorios",
   vendedor: "Edna",
   precio: "$110.00",
@@ -314,7 +315,7 @@ const datosConejo2 = {//objeto con los datos de la tarjeta de conejo
 
 const datosConejo3 = {//objeto con los datos de la tarjeta de conejo
   imgSrc: "./assets/img/seccion_conejos/ProductoSalud.jpg",
-  nombre: "beaphar multi-vit",
+  nombre: "beaphar multi-vit + vit c",
   categoria: "Salud",
   vendedor: "Uriel",
   precio: "$18.99",
@@ -322,7 +323,7 @@ const datosConejo3 = {//objeto con los datos de la tarjeta de conejo
 
 const datosConejo4 = {//objeto con los datos de la tarjeta de conejo
   imgSrc: "./assets/img/seccion_conejos/ProductoCuidadoeHigiene.jpg",
-  nombre: "Caja de arena",
+  nombre: "Caja de arena conejo",
   categoria: "Cuidado e Higiene",
   vendedor: "Alejandra",
   precio: "$980.20",
