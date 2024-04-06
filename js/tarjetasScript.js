@@ -119,7 +119,7 @@ const datosPerro3 = {//objeto con los datos de la tarjeta de perro
 const datosPerro4 = {//objeto con los datos de la tarjeta de perro 
   imgSrc:
     "./assets/img/seccion_perros/ProductoEntrenamiento.jpg",
-  nombre: "Premios Entrenamiento",
+  nombre: "Premios Training",
   categoria: "Entrenamiento",
   vendedor: "Antonio",
   precio: "$110.00",
@@ -155,7 +155,7 @@ const datosPerro7 = {//objeto con los datos de la tarjeta de perro
 const datosPerro8 = {//objeto con los datos de la tarjeta de perro 
   imgSrc:
     "./assets/img/seccion_perros/ProductoEntrenamiento2.jpg",
-  nombre: "Adiestramiento desde cero",
+  nombre: "Manual Canino",
   categoria: "Entrenamiento",
   vendedor: "Edna",
   precio: "$350.00",
@@ -203,7 +203,7 @@ const datosGato5 = {//objeto con los datos de la tarjeta de gato
 
 const datosGato6 = {//objeto con los datos de la tarjeta de gato
   imgSrc: "./assets/img/seccion_gatos/accesoriogato3.jpg",
-  nombre: "Collar para gato",
+  nombre: "Collar amarillo para gato",
   categoria: "Accesorios",
   vendedor: "Alexis",
   precio: "$80.00",
@@ -219,7 +219,7 @@ const datosGato7 = {//objeto con los datos de la tarjeta de gato
 
 const datosGato8 = {//objeto con los datos de la tarjeta de gato
   imgSrc: "./assets/img/seccion_gatos/ropagato2.jpg",
-  nombre: "Suéter para gato",
+  nombre: "Suéter tejido para gato",
   categoria: "Ropa y Moda",
   vendedor: "Uriel",
   precio: "$250.00",
@@ -263,7 +263,7 @@ const datosPez4 = {//objeto con los datos de la tarjeta de pez
 
 const datosPez5 = {//objeto con los datos de la tarjeta de pez
   imgSrc:
-    "./assets/img/seccion_peces/alimentopez2.webp",
+    "./assets/img/seccion_peces/alimentopez2.jpg",
   nombre: "Vipagram alimento base",
   categoria: "Alimentación",
   vendedor: "Edna",
@@ -291,7 +291,7 @@ const datosPez7 = {//objeto con los datos de la tarjeta de pez
 const datosPez8 = {//objeto con los datos de la tarjeta de pez
   imgSrc:
     "./assets/img/seccion_peces/saludpez2.jpg",
-  nombre: "Bomba de aire",
+  nombre: "Bomba de aire acuario",
   categoria: "Salud",
   vendedor: "Uriel",
   precio: "$315.50",
@@ -331,7 +331,7 @@ const datosConejo4 = {//objeto con los datos de la tarjeta de conejo
 
 const datosConejo5 = {//objeto con los datos de la tarjeta de conejo
   imgSrc: "./assets/img/seccion_conejos/ProductoAccesorio2.jpg",
-  nombre: "Jaula para conejo",
+  nombre: "Jaula pequeña conejo",
   categoria: "Accesorios",
   vendedor: "Edna",
   precio: "$3500.00",
@@ -339,7 +339,7 @@ const datosConejo5 = {//objeto con los datos de la tarjeta de conejo
 
 const datosConejo6 = {//objeto con los datos de la tarjeta de conejo
   imgSrc: "./assets/img/seccion_conejos/ProductoAlimentación2.jpg",
-  nombre: "conejo crispy",
+  nombre: "Verselle-Laga crispy",
   categoria: "Alimentación",
   vendedor: "Berenice",
   precio: "$150.75",
